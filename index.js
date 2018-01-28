@@ -1,3 +1,4 @@
 function takeANumber(katzDeliLine, customer) {
-  return katzDeliLine.length + 2
+  var string = `Welcome, ${customer}. You are number ` + (katzDeliLine.length + 1) + " in line."
+  return
 }
