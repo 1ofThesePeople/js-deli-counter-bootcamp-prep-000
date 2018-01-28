@@ -14,3 +14,13 @@ function nowServing(katzDeliLine) {
   }
   return call
 }
+
+function currentLine(katzDeliLine) {
+  if(katzDeliLine.length === 0) {
+    var string = katzDeliLine.shift()
+    var call = `Currently serving ${string}.`
+  } else {
+    var call = "There is nobody waiting to be served!"
+  }
+  return call
+}
