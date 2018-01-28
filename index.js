@@ -19,10 +19,11 @@ function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
     var call = "There is nobody waiting to be served!"
   } else {
-    var string = ""
-    var call = "The line is currently:"
+    var i = 1;
+    var string = ` ${i}. ${katzDeliLine[i-1]}`
+    var call = `The line is currently: ${string}`
     while(i <= katzDeliLine.length) {
-      string = ` ${i}. ${katzDeliLine[i-1]}`
+      string = `, ${i}. ${katzDeliLine[i-1]}`
       call += string
       i++
     }
