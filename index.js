@@ -17,7 +17,7 @@ function nowServing(katzDeliLine) {
 
 function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
-    var call = "There is nobody waiting to be served!"
+    var call = "Theline is currently empty."
   } else {
     var i = 1;
     var string = ` ${i}. ${katzDeliLine[i-1]}`
