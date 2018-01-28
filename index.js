@@ -1,5 +1,5 @@
 function takeANumber(katzDeliLine, customer) {
-  var string = `Welcome, ${customer}. You are number ${katzDeliLine.length + 1} in line.`
-
+  var number = katzDeliLine.length + 1
+  var string = `Welcome, ${customer}. You are number ${number} in line.`
   return string
 }
